@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TableModule } from 'primeng/table';
 import { DropdownModule } from 'primeng/dropdown';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //service
 import { CarService } from './carservice.service';
@@ -21,7 +22,9 @@ import { CarService } from './carservice.service';
     AppRoutingModule,
     TableModule,
     DropdownModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule, 
+    ReactiveFormsModule
   ],
   providers: [CarService],
   bootstrap: [AppComponent]

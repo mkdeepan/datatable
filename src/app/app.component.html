@@ -9,7 +9,7 @@
     <ng-template pTemplate="body" let-car let-columns="columns">
         <tr>
             <td *ngFor="let col of columns">
-              <p-dropdown *ngIf="col.field=='color'" [options]="car['colors']" optionLabel="name"></p-dropdown>     
+              <p-dropdown *ngIf="col.field=='color'" [(ngModel)]="car[col.field]" [options]="car['colors']" optionLabel="name"></p-dropdown>     
               <span *ngIf="col.field!='color'"> {{car[col.field]}}</span>         
             </td>
         </tr>
